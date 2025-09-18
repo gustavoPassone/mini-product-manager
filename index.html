@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="IE=7">
+   <meta name="description" content="gerenciador/lista de produtos simples">
+   <meta name="keywords" content="gerenciador, produtos">
+   <link rel="stylesheet" href="style.css">
+   <title>Gerenciador de Produtos</title>
+</head>
+
+<body>
+   <main>
+      <div class="form-add">
+         <h1>Adicionar Novo Produto</h1>
+         <form action="">
+            <div class="form-fields">
+               <label for="pImage">Foto do produto</label>
+               <input type="file" id="pImage" accept="image/*" required>
+            </div>
+   
+            <div class="form-fields">
+               <label for="pName">Nome do produto</label>
+               <input type="text" id="pName" placeholder="Insira o nome do produto">
+            </div>
+   
+            <div class="form-fields">
+               <label for="pPreco">Preço</label>
+               <input type="number" id="pPreco" placeholder="$ 0.00">
+            </div>
+   
+            <div class="form-fields">
+               <label for="pDesc">Descrição</label>
+               <textarea name="pDesc" id="pDesc">Insira a descrição do produto</textarea>
+            </div>
+   
+            <button type="submit" id="btn-submit">Cadastrar</button>
+         </form>
+      </div>
+
+      <div class="added-products">
+         <h1>Produtos Adicionados</h1>
+
+         <div class="cards-grid">       
+            <div class="product-card">
+               <img src="imagem.png" alt="imagem" class="product-img">
+               <div class="product-info">
+                  <p class="product-name">Camiseta</p>
+                  <p class="product-price">R$ 30.00</p>
+                  <p class="product-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, nesciunt!</p>
+               </div>
+            </div>
+
+            <div class="product-card">
+               <img src="imagem.png" alt="imagem" class="product-img">
+               <div class="product-info">
+                  <p class="product-name">Camiseta</p>
+                  <p class="product-price">R$ 30.00</p>
+                  <p class="product-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, nesciunt!</p>
+               </div>
+            </div>
+
+            <div class="product-card">
+               <img src="imagem.png" alt="imagem" class="product-img">
+               <div class="product-info">
+                  <p class="product-name">Camiseta</p>
+                  <p class="product-price">R$ 30.00</p>
+                  <p class="product-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, nesciunt!</p>
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </main>
+</body>
+
+</html>
