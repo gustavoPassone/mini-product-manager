@@ -15,27 +15,39 @@
    <main>
       <div class="form-add">
          <h1>Adicionar Novo Produto</h1>
-         <form action="">
-            <div class="form-fields">
-               <label for="pImage">Foto do produto</label>
-               <input type="file" id="pImage" accept="image/*" required>
+
+         <form id="productForm">
+            <div class="form-field">
+               <div class="upload-box">
+                  <input type="file" id="pImage" accept="image/png,image/jpeg,image/gif">
+                  <label for="pImage">
+                     <div class="upload-content">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1829/1829586.png" alt="icon">
+                        <p><span>Selecione </span>a imagem</p>
+                        <small>PNG, JPG, JPEG</small>
+                     </div>
+                  </label>
+               </div>
             </div>
-   
+
             <div class="form-fields">
-               <label for="pName">Nome do produto</label>
-               <input type="text" id="pName" placeholder="Insira o nome do produto">
+               <div class="form-field">
+                  <label for="pName">Nome do produto</label>
+                  <input type="text" id="pName" placeholder="Insira o nome do produto" required>
+               </div>
+
+               <div class="form-field">
+                  <label for="pPreco">Preço</label>
+                  <input type="number" id="pPreco" placeholder="$ 0.00" required>
+               </div>
+
+               <div class="form-field">
+                  <label for="pDesc">Descrição</label>
+                  <textarea name="pDesc" id="pDesc" placeholder="Insira a descrição do produto" required></textarea>
+               </div>
             </div>
-   
-            <div class="form-fields">
-               <label for="pPreco">Preço</label>
-               <input type="number" id="pPreco" placeholder="$ 0.00">
-            </div>
-   
-            <div class="form-fields">
-               <label for="pDesc">Descrição</label>
-               <textarea name="pDesc" id="pDesc">Insira a descrição do produto</textarea>
-            </div>
-   
+
+
             <button type="submit" id="btn-submit">Cadastrar</button>
          </form>
       </div>
@@ -43,37 +55,21 @@
       <div class="added-products">
          <h1>Produtos Adicionados</h1>
 
-         <div class="cards-grid">       
-            <div class="product-card">
+         <div class="cards-grid">
+            <!-- <div class="product-card">
                <img src="imagem.png" alt="imagem" class="product-img">
                <div class="product-info">
                   <p class="product-name">Camiseta</p>
                   <p class="product-price">R$ 30.00</p>
                   <p class="product-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, nesciunt!</p>
                </div>
-            </div>
-
-            <div class="product-card">
-               <img src="imagem.png" alt="imagem" class="product-img">
-               <div class="product-info">
-                  <p class="product-name">Camiseta</p>
-                  <p class="product-price">R$ 30.00</p>
-                  <p class="product-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, nesciunt!</p>
-               </div>
-            </div>
-
-            <div class="product-card">
-               <img src="imagem.png" alt="imagem" class="product-img">
-               <div class="product-info">
-                  <p class="product-name">Camiseta</p>
-                  <p class="product-price">R$ 30.00</p>
-                  <p class="product-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, nesciunt!</p>
-               </div>
-            </div>
+            </div> -->
 
          </div>
       </div>
    </main>
+
+   <script src="script.js"></script>
 </body>
 
 </html>
